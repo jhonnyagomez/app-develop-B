@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Develop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body class="bg-light bg-gradient">
+    <div class="container">
+        <div class="row border rounded bg-danger bg-gradient">
+            <div class="col">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYJP6lVwI5WUwvB2NP77RJZaIfbL2k4Ra0vrdOeO1B3Sdji6hy7LN7M7EtdlJv6JZPZPasF4vIxE4SVPZ44E1DONtuQ0x3KxvAhWbuwOwaB8La0oPIyyfvhl5MDCjlYdgZ4ey89eOPcIhBy-uQYjsWJfE8lbI-38xR2XYGfKpV1jHgkM6O8wFjfoxV/w1200-h630-p-k-no-nu/C%C3%BAcuta%20Deportivo-COL.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Cucuta Deportivo
+                      </a>
+                    </div>
+                  </nav>  
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3 ">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header text-center bg-danger">
+                      <h4>Control de acceso</h4>
+                    </div>
+                    <div class="card-body">
+                        <div id="alert"></div>
+                        <form id="formLogin">
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Correo Electronico</label>
+                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">Nunca compartiremos este correo con nadie.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="password" class="form-label">Contraseña</label>
+                              <input type="password" class="form-control" id="password">
+                            </div>
+                            <button type="submit" class="btn btn-danger d-block mx-auto">Entrar</button>
+                          </form>
+                    </div>
+                  </div>   
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="fw-semibold">&copy;Todos los derechos reservados.</p>   
+            </div>
+        </div>
+    </div>
+
+    <script src="js/loginService.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
