@@ -26,10 +26,12 @@ function login (email, password){
             message='Bienvenido'
             console.log('200 OK, responde bien' + response)
             alertBuilder(alertType, message)
-            localStorage.setItem('token', 'maskfnkmsfkm')
+            response.json().then((data) => {
+                localStorage.setItem('token', data.token)
+            })
             setTimeout(() => {
                 location.href = 'admin/dashboard.html'
-            }, 3000) //equivalente a dos segundos de espera
+            }, 1000) //equivalente a dos segundos de espera
         }
         else{
             alertType = 'danger'
