@@ -1,5 +1,5 @@
 function getProducts(page){
-    document.getElementById('cardHeader').innerHTML = '<h3>Lista de Productos</h3>'
+    document.getElementById('cardHeader').innerHTML = '<h3><i class="fa-solid fa-boxes-stacked" style="color: #000000;"></i> Lista de Productos</h3>'
     document.getElementById('info').innerHTML =''
      fetch("https://reqres.in/api/unknown?page="+page, {
          method: "GET",
@@ -43,7 +43,7 @@ function getProducts(page){
                              <td><input type="color" value="${product.color}"></td>
                              <td>${product.pantone_value}</td>
                              <td>
-                                <button type="button" class="btn btn-outline-danger" onclick="showInfoProduct('${product.id}')">View</button>
+                                <button type="button" class="btn btn-outline-danger" onclick="showInfoProduct('${product.id}')"><i class="fa-solid fa-eye"></i></button>
                             </td>
                          </tr>
                          `)
@@ -109,7 +109,7 @@ function showModalProduct(product){
           <div class="modal-dialog modal-sm">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Show Product</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Show Product <i class="fa-solid fa-box"></i></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
